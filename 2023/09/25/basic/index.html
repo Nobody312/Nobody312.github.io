@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>hexo一些操作和配置 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="为了在将来某天换电脑时不会忘掉怎么配置，故记录以下所有的操作： 一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名&#x2F;github.io”，目的是为了让he">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo一些操作和配置">
+<meta property="og:url" content="https://nobody312.github.io/2023/09/25/basic/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="为了在将来某天换电脑时不会忘掉怎么配置，故记录以下所有的操作： 一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名&#x2F;github.io”，目的是为了让he">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-25T03:49:23.000Z">
+<meta property="article:modified_time" content="2023-09-25T11:29:06.588Z">
+<meta property="article:author" content="Charlie Lai">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/nobody312.github.io/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/nobody312.github.io/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/nobody312.github.io/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/nobody312.github.io/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/nobody312.github.io/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/nobody312.github.io/">Home</a>
+        
+          <a class="main-nav-link" href="/nobody312.github.io/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/nobody312.github.io/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://nobody312.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-basic" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/nobody312.github.io/2023/09/25/basic/" class="article-date">
+  <time class="dt-published" datetime="2023-09-25T03:49:23.000Z" itemprop="datePublished">2023-09-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/nobody312.github.io/categories/%E6%8A%80%E5%B7%A7/">技巧</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      hexo一些操作和配置
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>为了在将来某天换电脑时不会忘掉怎么配置，故记录以下所有的操作：</p>
+<p>一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名&#x2F;github.io”，目的是为了让hexo本地文件可以更加顺利部署到Github仓库）。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/547520780">2022 Hexo 博客搭建和使用教程(Windows) - 知乎 (zhihu.com)</a></p>
+<span id="more"></span>
+
+<p>上述提到的“部署”，具体操作为：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/158975269">基于Hexo和GitHub免费搭建个人博客网站 - 知乎 (zhihu.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/banjw_129/article/details/82261165">hexo + github pages搭建博客样式加载不出来_banjw的博客-CSDN博客</a></p>
+<p>值得注意的是，链接中提到的 <code>_config.yml</code> 在本机中可以用vscode打开并修改，若是新的机子，这个文件并没有一些选项，需要自己手动添加。且最好用SSH进行部署，若用https修改 <code>_config.yml</code> 配置，可能无法有效：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42569846/article/details/105808683">Hexo使用SSH连接GitHub_codepandaes的博客-CSDN博客</a></p>
+<p>然后就是图片在hexo本地无法显示的解决方案，这里用的markdown编辑器是typora，且在复制图片时，事先需要在typora中设置图片存放在指定的文件夹（这里指博客的子目录：\source\ _posts）。</p>
+<p>如果图片无法显示，原因之一是hexo将.md文件转为.html时，只识别绝对地址。这可以通过下载插件解决<code>npm install hexo-asset-img --save</code>  。注意这里不是images 。参照以下第一个链接的评论区：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_43401436/article/details/107191688">hexo博客中插入图片失败——解决思路及个人最终解决办法_hexo无法插入图片_金牛大王的博客-CSDN博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://moeci.com/posts/hexo-typora/">Hexo + Typora + 开发Hexo插件 解决图片路径不一致 | yiyun’s Blog (moeci.com)</a></p>
+<p>而在hexo控制图片的大小，本人亲测在typora中的放缩代码无法在hexo中有效，故考虑一些特殊语法，代价是无法在typora中预览，不过利用文字描述可能有提示作用：</p>
+<p><a target="_blank" rel="noopener" href="https://xring.net/2018/hexo-pic-size.html">Hexo 自定义图片大小 | -炎屾- (xring.net)</a></p>
+<p>至于在本地利用hexo进行博客写作，以及想删除本地和网路文件，参考：</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/132823826">使用hexo新建、编辑并预览文章 - 知乎 (zhihu.com)</a></p>
+<p>[用Github Pages+Hexo搭建博客之(七)如何删除一篇已经发布的文章 #成功解决：同时删除掉.deploy_git文件夹_hexo删除文章_夏普通的博客-CSDN博客](<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34243930/article/details/109046120#:~:text=%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4%E5%A6%82%E4%B8%8B">https://blog.csdn.net/qq_34243930/article/details/109046120#:~:text=具体步骤如下</a> 1 第一步，去文件夹 source%2F_posts 下删除你想要删除的文章 2 第二步，删除 .deploy_git,后，再执行 hexo g ， hexo g 即可。 发现文章删除成功✔)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://nobody312.github.io/2023/09/25/basic/" data-id="clmyu0o230003ukur22f2fscl" data-title="hexo一些操作和配置" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/nobody312.github.io/2023/09/25/myblog/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          计算物理
+        
+      </div>
+    </a>
+  
+  
+    <a href="/nobody312.github.io/2023/09/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/nobody312.github.io/categories/%E6%8A%80%E5%B7%A7/">技巧</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/nobody312.github.io/archives/2023/09/">September 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/nobody312.github.io/2023/09/25/myblog/">计算物理</a>
+          </li>
+        
+          <li>
+            <a href="/nobody312.github.io/2023/09/25/basic/">hexo一些操作和配置</a>
+          </li>
+        
+          <li>
+            <a href="/nobody312.github.io/2023/09/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 Charlie Lai<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/nobody312.github.io/" class="mobile-nav-link">Home</a>
+  
+    <a href="/nobody312.github.io/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/nobody312.github.io/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/nobody312.github.io/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/nobody312.github.io/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
