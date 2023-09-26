@@ -1,111 +1,254 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>hexo一些操作和配置 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="为了在将来某天换电脑时不会忘掉怎么配置，故记录以下所有的操作： 一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名&#x2F;github.io”，目的是为了让he">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"nobody312.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"home":"/","about":"/about","tags":"/tags"}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="为了在将来某天换电脑时不会忘掉怎么配置，故记录以下所有的操作： 一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名&#x2F;github.io”，目的是为了让hexo本地文">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo一些操作和配置">
 <meta property="og:url" content="https://nobody312.github.io/2023/09/25/basic/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="为了在将来某天换电脑时不会忘掉怎么配置，故记录以下所有的操作： 一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名&#x2F;github.io”，目的是为了让he">
-<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="世界之树">
+<meta property="og:description" content="为了在将来某天换电脑时不会忘掉怎么配置，故记录以下所有的操作： 一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名&#x2F;github.io”，目的是为了让hexo本地文">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-25T03:49:23.000Z">
-<meta property="article:modified_time" content="2023-09-25T16:13:13.594Z">
+<meta property="article:modified_time" content="2023-09-26T06:26:36.533Z">
 <meta property="article:author" content="Charlie Lai">
+<meta property="article:tag" content="basic">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<link rel="canonical" href="https://nobody312.github.io/2023/09/25/basic/">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+  <title>hexo一些操作和配置 | 世界之树</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://Nobody312.github.io"></form>
-      </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">世界之树</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">EL PSY KONGROO</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
-</header>
+</div>
 
-      <div class="outer">
-        <section id="main"><article id="post-basic" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/25/basic/" class="article-date">
-  <time class="dt-published" datetime="2023-09-25T03:49:23.000Z" itemprop="datePublished">2023-09-25</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E5%B7%A7/">技巧</a>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
   </div>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      hexo一些操作和配置
-    </h1>
-  
+</div>
+    </header>
 
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://nobody312.github.io/2023/09/25/basic/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Charlie Lai">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界之树">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          hexo一些操作和配置
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-09-25 11:49:23" itemprop="dateCreated datePublished" datetime="2023-09-25T11:49:23+08:00">2023-09-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-09-26 14:26:36" itemprop="dateModified" datetime="2023-09-26T14:26:36+08:00">2023-09-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">技巧</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
         <p>为了在将来某天换电脑时不会忘掉怎么配置，故记录以下所有的操作：</p>
-<p>一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名&#x2F;github.io”，目的是为了让hexo本地文件可以更加顺利部署到Github仓库）</p>
+<p>一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名/github.io”，目的是为了让hexo本地文件可以更加顺利部署到Github仓库）</p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/547520780">2022 Hexo 博客搭建和使用教程(Windows) - 知乎 (zhihu.com)</a></p>
 <span id="more"></span>
-
 <p>上述提到的“部署”，具体操作为：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/158975269">基于Hexo和GitHub免费搭建个人博客网站 - 知乎 (zhihu.com)</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/banjw_129/article/details/82261165">hexo + github pages搭建博客样式加载不出来_banjw的博客-CSDN博客</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/52272170">hexo+Github Page搭建的博客无法加载样式表？ - 知乎 (zhihu.com)</a></p>
@@ -113,7 +256,7 @@
 <p>值得注意的是，链接中提到的 <code>_config.yml</code> 在本机中可以用vscode打开并修改，若是新的机子，这个文件并没有一些选项，需要自己手动添加。且最好用SSH进行部署，若用https修改 <code>_config.yml</code> 配置，可能无法有效：</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42569846/article/details/105808683">Hexo使用SSH连接GitHub_codepandaes的博客-CSDN博客</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_60930579/article/details/126312041">使用Hexo部署静态网站或博客到github(gitee)时css或js样式无法显示的问题原因以及解决方案_hexo js没加载_DoublePeach-的博客-CSDN博客</a></p>
-<p>然后就是图片在hexo本地无法显示的解决方案，这里用的markdown编辑器是typora，且在复制图片时，事先需要在typora中设置图片存放在指定的文件夹（这里指博客的子目录：\source\ _posts）。</p>
+<p>                                                  _posts）。</p>
 <p>如果图片无法显示，原因之一是hexo将.md文件转为.html时，只识别绝对地址。这可以通过下载插件解决<code>npm install hexo-asset-img --save</code>  。注意这里不是images 。参照以下第一个链接的评论区：</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_43401436/article/details/107191688">hexo博客中插入图片失败——解决思路及个人最终解决办法_hexo无法插入图片_金牛大王的博客-CSDN博客</a></p>
 <p><a target="_blank" rel="noopener" href="https://moeci.com/posts/hexo-typora/">Hexo + Typora + 开发Hexo插件 解决图片路径不一致 | yiyun’s Blog (moeci.com)</a></p>
@@ -121,138 +264,211 @@
 <p><a target="_blank" rel="noopener" href="https://xring.net/2018/hexo-pic-size.html">Hexo 自定义图片大小 | -炎屾- (xring.net)</a></p>
 <p>至于在本地利用hexo进行博客写作，以及想删除本地和网路文件，使用以下代码：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
 <p>参考：</p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/132823826">使用hexo新建、编辑并预览文章 - 知乎 (zhihu.com)</a></p>
-<p>[用Github Pages+Hexo搭建博客之(七)如何删除一篇已经发布的文章 #成功解决：同时删除掉.deploy_git文件夹_hexo删除文章_夏普通的博客-CSDN博客](<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34243930/article/details/109046120#:~:text=%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4%E5%A6%82%E4%B8%8B">https://blog.csdn.net/qq_34243930/article/details/109046120#:~:text=具体步骤如下</a> 1 第一步，去文件夹 source%2F_posts 下删除你想要删除的文章 2 第二步，删除 .deploy_git,后，再执行 hexo g ， hexo g 即可。 发现文章删除成功✔)</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34243930/article/details/109046120#:~:text=具体步骤如下 1 第一步，去文件夹 source%2F_posts 下删除你想要删除的文章 2 第二步，删除 .deploy_git,后，再执行 hexo g ， hexo g 即可。 发现文章删除成功✔">用Github Pages+Hexo搭建博客之(七)如何删除一篇已经发布的文章 #成功解决：同时删除掉.deploy_git文件夹_hexo删除文章_夏普通的博客-CSDN博客</a></p>
+<p>而$LaTeX$代码输入，参考链接：<a target="_blank" rel="noopener" href="http://tanglab.pku.edu.cn/2022/11/24/R&amp;D/2022/GitHub_pages_tutorial_sequel/">Tutorial:基于Hexo框架的GitHub个人主页搭建教程（后篇） | Tanglab@PKU</a> </p>
+<p>对于tag和categories的配置参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42118981/article/details/109462491">解决hexo下分类和标签无法显示的问题_hexo tags-CSDN博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41973410/article/details/103694054">hexo categories和tags页面不显示解决办法 网址后出现/20%/_hexo categories无效-CSDN博客</a> </p>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="https://nobody312.github.io/2023/09/25/basic/" data-id="clmz46u7o00013gur14ulgij8" data-title="hexo一些操作和配置" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/basic/" rel="tag"># basic</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/09/24/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/09/25/myblog/" rel="next" title="计算物理">
+      计算物理 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Charlie Lai</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Charlie Lai</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
     </footer>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2023/09/25/myblog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          计算物理
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2023/09/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
 
   
-</article>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E5%B7%A7/">技巧</a></li></ul>
-    </div>
-  </div>
+<script src="/js/schemes/muse.js"></script>
 
 
-  
-    
+<script src="/js/next-boot.js"></script>
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/09/25/myblog/">计算物理</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/25/basic/">hexo一些操作和配置</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/24/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 Charlie Lai<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
-<script src="/js/script.js"></script>
+  
+<script src="/js/local-search.js"></script>
 
 
 
 
 
-  </div>
+
+
+
+
+
+
+
+
+  
+
+  
+
 </body>
 </html>
