@@ -194,11 +194,11 @@
 <li>短格式：首先用with语句加载函数包PackageName，然后直接使用命令运算</li>
 <li>长格式：PackageName[CommandName]或者PackageName:-CommandName</li>
 </ul>
-<p><em><em>短格式</em></em>短格式**进行如下运算：</p>
+<p>举例：使用<b>短格式</b>进行如下运算：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">restart;	#清除内存</span><br><span class="line">with(plots);	#加载plots函数包</span><br><span class="line">inequal(0&lt;x+y,x=-3..3,y=-3..3);		画出由不等式定义的区域</span><br></pre></td></tr></table></figure>
 <p><em><em>长格式</em></em>**</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">plots[inequal](0&lt;x+y,x=-3..3,y=-3..3);</span><br><span class="line">#或者plots:-inequal(0&lt;x+y,x=-3..3,y=-3..3);</span><br></pre></td></tr></table></figure>
-<p><em><em>不能以数字开头*</em>，且不能带空格、标点符号、算号等，如yy、x3s是变量名，而3s、s</em>号等，如yy、x3s是变量名，而3s、s*r、d e就不是（d和e之间隔了空格）。</p>
+<p>变量名：是由字母开头的字母和数字的字符串，<b>不能以数字开头</b>，且不能带空格、标点符号、算号等，如yy、x3s是变量名，而3s、s*r、d e就不是（d和e之间隔了空格）。</p>
 <h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h4><p><strong>序列</strong>：是一组用逗号隔开的表达式列; 提取序列中的元素项，可以使用索引</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a:=1,2,3,4</span><br><span class="line">a[1],a[1 ..3],[seq(i)]</span><br></pre></td></tr></table></figure>
 <h4 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h4><h4 id="矢量与矩阵"><a href="#矢量与矩阵" class="headerlink" title="矢量与矩阵"></a>矢量与矩阵</h4><h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><h4 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h4><h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><h3 id="Matlab-物理"><a href="#Matlab-物理" class="headerlink" title="Matlab 物理"></a>Matlab 物理</h3><h4 id="基本操作-1"><a href="#基本操作-1" class="headerlink" title="基本操作"></a>基本操作</h4><p>Matlab中的编译器和命令行窗口的区别和使用？ - Evelyn的文章 - 知乎 <a href="https://zhuanlan.zhihu.com/p/405676247">https://zhuanlan.zhihu.com/p/405676247</a></p>
@@ -265,7 +265,7 @@
   <entry>
     <title>理论物理摘录</title>
     <url>/2023/10/16/myblog-01/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><em><em>Obsidian</em></em>sidian**中的笔记，且会利用文章间的引用，来模仿ob的双链模式，以作为各个知识点的详细补充. 每一个标题意味着一本书，该摘录将不定期更新. </p>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>该摘录来自本人在<b>Obsidian</b>中的笔记，且会利用文章间的引用，来模仿ob的双链模式，以作为各个知识点的详细补充. 每一个标题意味着一本书，该摘录将不定期更新. </p>
 ]]></content>
       <categories>
         <category>读书笔记</category>
