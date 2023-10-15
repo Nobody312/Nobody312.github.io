@@ -29,7 +29,7 @@
 <meta property="og:description" content="为了在将来某天换电脑时不会忘掉怎么配置，故记录以下所有的操作： 一开始需要下载各种软件，并进行配置；然后为了Github，需要得到id_rsa.pub（一般位于C盘）中的SSH内容，然后验证本地与Github仓库是否连接成功；接着对Github中的page进行设置（已经配置好了，选择main为默认，且Repository name已经修改成“用户名&#x2F;github.io”，目的是为了让hexo本地文">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-25T03:49:23.000Z">
-<meta property="article:modified_time" content="2023-09-30T14:51:57.168Z">
+<meta property="article:modified_time" content="2023-10-15T05:10:11.223Z">
 <meta property="article:author" content="Charlie Lai">
 <meta property="article:tag" content="basic">
 <meta name="twitter:card" content="summary">
@@ -233,7 +233,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-09-30 22:51:57" itemprop="dateModified" datetime="2023-09-30T22:51:57+08:00">2023-09-30</time>
+      <time title="修改时间：2023-10-15 13:10:11" itemprop="dateModified" datetime="2023-10-15T13:10:11+08:00">2023-10-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -298,14 +298,18 @@
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/132823826">使用hexo新建、编辑并预览文章 - 知乎 (zhihu.com)</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34243930/article/details/109046120#:~:text=具体步骤如下 1 第一步，去文件夹 source%2F_posts 下删除你想要删除的文章 2 第二步，删除 .deploy_git,后，再执行 hexo g ， hexo g 即可。 发现文章删除成功✔">用Github Pages+Hexo搭建博客之(七)如何删除一篇已经发布的文章 #成功解决：同时删除掉.deploy_git文件夹_hexo删除文章_夏普通的博客-CSDN博客</a></p>
 <p>而在hexo中加粗和斜体不一定和一般markdown语法一致：<a target="_blank" rel="noopener" href="https://benpaodewoniu.github.io/2020/01/27/hexo12/">hexo | 某些小修饰（加粗，颜色变化等） | 犀牛的博客 (benpaodewoniu.github.io)</a></p>
-<h2 id="公式输入和标签"><a href="#公式输入和标签" class="headerlink" title="公式输入和标签"></a>公式输入和标签</h2><p>而$LaTeX$代码输入，参考链接：<a target="_blank" rel="noopener" href="http://tanglab.pku.edu.cn/2022/11/24/R&amp;D/2022/GitHub_pages_tutorial_sequel/">Tutorial:基于Hexo框架的GitHub个人主页搭建教程（后篇） | Tanglab@PKU</a> </p>
+<p>至于文章内部引用，以及文章之间的引用，参考：<a target="_blank" rel="noopener" href="https://xuanyabulema.github.io/posts/Hexo-Posts-Links.html#章节名">Hexo 文章跳转（链接） | 悬崖不勒马的小站 (xuanyabulema.github.io)</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.jijian.link/2020-01-08/hexo-anchor-link/#hexo-标题与-id-关系">hexo 链接到站内文章指定锚点 | 极简前端 (jijian.link)</a></p>
+<p>文章内跳转：<a href="#基本配置">跳转到本文锚点</a>  或者   文章间跳转：<a href="/2023/09/25/myblog/" title="计算物理">文章标题（可选）</a> </p>
+<p>文章间锚点的跳转：<a href="/2023/09/25/myblog/#matlab-物理">显示的文字</a>  </p>
+<h2 id="公式输入和标签"><a href="#公式输入和标签" class="headerlink" title="公式输入和标签"></a>公式输入和标签</h2><p>而$\LaTeX$代码输入，参考链接：<a target="_blank" rel="noopener" href="http://tanglab.pku.edu.cn/2022/11/24/R&amp;D/2022/GitHub_pages_tutorial_sequel/">Tutorial:基于Hexo框架的GitHub个人主页搭建教程（后篇） | Tanglab@PKU</a> </p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/yexiaohhjk/article/details/82526604">hexo next主题解决无法显示数学公式-CSDN博客</a></p>
 <p>值得注意的是，由于对hexo中的一些符号进行重新定义，故在写文件相对路径时用斜杆/代替反斜杆。</p>
 <p>对于tag和categories的配置参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42118981/article/details/109462491">解决hexo下分类和标签无法显示的问题_hexo tags-CSDN博客</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41973410/article/details/103694054">hexo categories和tags页面不显示解决办法 网址后出现/20%/_hexo categories无效-CSDN博客</a> </p>
 <h2 id="主题配置以及升级"><a href="#主题配置以及升级" class="headerlink" title="主题配置以及升级"></a>主题配置以及升级</h2><p>关于主题next：<a target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/100138838">Hexo-Next 主题博客个性化配置超详细，超全面(两万字)-CSDN博客</a></p>
 <p>若想升级该主题到最新版，先备份原来版本的next文件。考虑手动更新，需要进入Github的主页，搜索关键词hexo next，找到最新的更新包，下载并解压到本地，然后拖动到hexo的子目录/source/themes（由于解压后的文件名带有版本号，最好重命名为next）。然后将旧版本和新版本的<code>_config.yml</code>用vscode打开，可以开启左右拆分，然后按照以往对主题文件的配置，通过命令<code>Ctrl+H</code>，确定关键词的位置，然后对照进行修改。</p>
-<h2 id="Waline评论系统的引入"><a href="#Waline评论系统的引入" class="headerlink" title="Waline评论系统的引入"></a>Waline评论系统的引入</h2><p>在配置之前，需保证hexo和next都是新版的，next的操作参考上一节，而hexo的更新参考以下：</p>
+<h2 id="Waline评论系统的引入"><a href="#Waline评论系统的引入" class="headerlink" title="Waline评论系统的引入"></a>Waline评论系统的引入</h2><p>Waline 评论系统相比其他的，我看重其可以使用$\LaTeX$公式进行评论，且通过评论的预览显示效果。在配置之前，需保证hexo和next都是新版的，next的操作参考上一节，而hexo的更新参考以下：</p>
 <p><a target="_blank" rel="noopener" href="https://www.cylong.com/blog/2020/08/10/update-hexo-next/">Hexo 博客和 NexT 主题版本升级 | 笑话人生 (cylong.com)</a></p>
 <p>评论系统配置参考：</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/jiunian_2761/article/details/122621667">Hexo博客进阶：为 Next 主题添加 Waline 评论系统-CSDN博客</a></p>
