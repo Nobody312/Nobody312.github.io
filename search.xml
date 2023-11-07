@@ -68,19 +68,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>理论物理摘录</title>
-    <url>/2023/10/16/myblog-01/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>该摘录来自本人在<b>Obsidian</b>中的笔记，且会利用文章间的引用，来模仿ob的双链模式，以作为各个知识点的详细补充. 每一个标题意味着一本书，该摘录将不定期更新. </p>
-<h2 id="The-Geometry-of-Four-Manifolds"><a href="#The-Geometry-of-Four-Manifolds" class="headerlink" title="The Geometry of Four-Manifolds"></a>The Geometry of Four-Manifolds</h2><div style="width:50%;margin:auto"></div>]]></content>
-      <categories>
-        <category>读书笔记</category>
-      </categories>
-      <tags>
-        <tag>math.</tag>
-        <tag>phys.</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算物理</title>
     <url>/2023/09/25/myblog/</url>
     <content><![CDATA[<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>物理专业的学生编程很厉害是怎样一种体验？ - 子云天的回答 - 知乎 <a href="https://www.zhihu.com/question/37634258/answer/73042103">https://www.zhihu.com/question/37634258/answer/73042103</a></p>
@@ -274,7 +261,44 @@
         <category>技巧</category>
       </categories>
       <tags>
+        <tag>coding</tag>
         <tag>phys.</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>理论物理摘录</title>
+    <url>/2023/10/16/myblog-01/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>该摘录来自本人在<b>Obsidian</b>中的笔记，且会利用文章间的引用，来模仿ob的双链模式，以作为各个知识点的详细补充. 每一个标题意味着一本书，该摘录将不定期更新. </p>
+<h2 id="The-Geometry-of-Four-Manifolds"><a href="#The-Geometry-of-Four-Manifolds" class="headerlink" title="The Geometry of Four-Manifolds"></a>The Geometry of Four-Manifolds</h2>]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>phys.</tag>
+        <tag>math.</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++与Unreal Engine 4</title>
+    <url>/2023/11/03/note02/</url>
+    <content><![CDATA[<h2 id="21天学通C-（第8版）"><a href="#21天学通C-（第8版）" class="headerlink" title="21天学通C++（第8版）"></a>21天学通C++（第8版）</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>首先，通过<a href="https://www.bilibili.com/video/BV1X94y11715/?p=3&amp;spm_id_from=pageDriver&amp;vd_source=9866643377a808af97cbca34c0b2f539">视频</a> 了解，在vs中，创建 <code>.cpp</code> 文件，然后转换为 <code>.obj</code>，接着再生成 <code>.exe</code></p>
+<p>然后，<b>编译</b>的意思是，将 <code>.cpp</code> 文件，经过预处理，变成 <code>.obj</code> 格式，按 <code>Ctrl+F7</code> 实现。<b>预处理</b>是编译的第一步，其作用是，当存在两个.cpp 文件时，可以用 <code>#include</code> ，将其中一个 <code>.cpp</code> 文件复制粘贴到另一个文件中，表示为 <code>#include &quot;Multi.h&quot;</code>， 其中 <code>Multi.h</code> 为新建的头文件。</p>
+<span id="more"></span>
+<p>而编译的第二步是<b>链接</b>。它可以将多个<code>.obj</code> 文件链接起来。若想在一个 <code>.cpp</code> 文件调用另一个 <code>.cpp</code> 文件，则需要事先声明，如下图：</p>
+<img src="/2023/11/03/note02/%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E.png" class="">
+<p>若修改<code>Log.cpp</code> 中的函数，当 <code>study.cpp</code> 要调用<code>Log.cpp</code> 中的函数，若以未修改前的函数名调用，那会出现链接报错，形式为 <code>LINK2019</code> 这类。但若注释掉该调用文件，即使在开始时声明了该文件，编译后依然输出原<code>.cpp</code>，原因是计算机不寻找调用的文件，自然不会链接报错。还有一种报错，叫重复定义，即在调用文件中存在重复的函数定义，计算机无法决定调用哪个函数，错误形式为 <code>C2084</code> 。解决方案是，在调用文件中，添加 <code>static</code> ，加在上图红色圈出的语句前面，其作用是限制自定义函数在本 <code>.cpp</code> 文件中，不会链接到其他 <code>.cpp</code> 文件中。</p>
+<h3 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    std::cout &lt;&lt;<span class="string">&quot;Hello World&quot;</span>&lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>上述代码可打印Hello World，可分为两部分，预处理器编译指令 <code>#include</code> ，以及程序的主体 <code>main()</code> 。预处理编译指令是向预处理器发出的命令，总以 <code>#</code> 开头，在上述代码的第1行，<code>#include &lt;iostream&gt;</code> 的作用是，让预处理器获取指定文件 <code>&lt;iostream&gt;</code> ，这样的话，在可以使用<code>cout</code> ，它包含在文件 <code>&lt;iostream&gt;</code> 中。</p>
+<h4 id="名称空间"><a href="#名称空间" class="headerlink" title="名称空间"></a>名称空间</h4><p>代码的第4行 <code>std::cout</code>和 <code>std::endl</code> 表示，<code>cout</code>和 <code>endl</code> 位于标准名称空间中。利用名称空间，可以给代码指定的名称，有助于降低命名冲突的风险。</p>
+<p>当使用名称空间后，上述代码可以改写为：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">using</span> std::cout;</span><br><span class="line">    <span class="keyword">using</span> std::endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello World&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>改写后的代码第4行和第5行，可以在不显示指定名称空间限定符 <code>std::</code> 的情况下使用 <code>std::cout</code>和 <code>std::endl</code> 。</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h2 id="Unreal-Engine-4-游戏开发"><a href="#Unreal-Engine-4-游戏开发" class="headerlink" title="Unreal Engine 4 游戏开发"></a>Unreal Engine 4 游戏开发</h2><h3 id="前言-1"><a href="#前言-1" class="headerlink" title="前言"></a>前言</h3><p>[<a href="https://www.bilibili.com/video/BV1X94y11715/?p=3&amp;share_source=copy_web&amp;vd_source=7af2469565de72393d2f27d6af14afc6">https://www.bilibili.com/video/BV1X94y11715/?p=3&amp;share_source=copy_web&amp;vd_source=7af2469565de72393d2f27d6af14afc6</a>]:<br>[<a href="https://www.bilibili.com/video/BV1X94y11715/?p=3&amp;spm_id_from=pageDriver&amp;vd_source=9866643377a808af97cbca34c0b2f539">https://www.bilibili.com/video/BV1X94y11715/?p=3&amp;spm_id_from=pageDriver&amp;vd_source=9866643377a808af97cbca34c0b2f539</a>]: </p>
+]]></content>
+      <categories>
+        <category>技巧</category>
+      </categories>
+      <tags>
         <tag>coding</tag>
       </tags>
   </entry>
